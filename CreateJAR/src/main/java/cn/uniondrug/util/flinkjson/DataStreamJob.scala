@@ -1,21 +1,13 @@
 package cn.uniondrug.util.flinkjson
 
 
-import java.util
 import java.util.Properties
 
 import com.alibaba.fastjson.{JSON, JSONArray, JSONObject}
 import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.api.java.utils.ParameterTool
-import org.apache.flink.streaming.api.functions.co.CoFlatMapFunction
-import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
-import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer
-import org.apache.flink.util.Collector
+import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
 import org.slf4j.LoggerFactory
-
-import scala.util.control.Breaks._
-import scala.tools.nsc.doc.Universe
-import scala.tools.nsc.doc.model.{Annotation, Entity, TemplateEntity}
 
 
 
